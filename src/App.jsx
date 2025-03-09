@@ -20,7 +20,7 @@ export const App = () => {
 
   const handleHeartClick = async (id) => {
     try {
-      const res = await fetch(`${URL}/${id}/like`, {
+      const res = await fetch(`${URL}${id}/like`, {
         method: "POST",
       });
 
